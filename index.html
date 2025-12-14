@@ -127,73 +127,78 @@
               <p class="eyebrow">SERVICES</p>
             </div>
           </div>
-          <div class="card-grid services-grid">
-            <article class="card">
-              <h3>Personal Injury &amp; Insurance Disputes</h3>
-              <ul>
-                <li>Motor vehicle accident claims</li>
-                <li>Catastrophic injury cases</li>
-                <li>Brain and spinal cord injury disputes</li>
-                <li>Long-term disability claims</li>
-                <li>Insurance coverage disputes</li>
-                <li>Negotiations between injured parties and insurers</li>
-                <li>Pre- and post-trial resolution discussions</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Civil &amp; Commercial Disputes</h3>
-              <ul>
-                <li>Contract disagreements</li>
-                <li>Business partnership conflicts</li>
-                <li>Shareholder or ownership disputes</li>
-                <li>Professional negligence claims</li>
-                <li>Construction / contractor disputes</li>
-                <li>Commercial lease issues</li>
-                <li>Debt or payment disputes</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Family &amp; Relationship Matters</h3>
-              <ul>
-                <li>Divorce and separation</li>
-                <li>Parenting plans &amp; custody arrangements</li>
-                <li>Support obligations</li>
-                <li>Division of property and debts</li>
-                <li>Co-parenting &amp; post-separation disputes</li>
-                <li>Elder care and caregiving conflicts</li>
-                <li>Inheritance or family estate matters</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Medical &amp; Healthcare Disputes</h3>
-              <ul>
-                <li>Medical malpractice concerns</li>
-                <li>Informed consent issues</li>
-                <li>Hospital or provider disputes</li>
-                <li>Disability or capacity disagreements</li>
-                <li>Healthcare insurance disputes</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Arbitration-Specific Matters</h3>
-              <ul>
-                <li>Commercial and contractual arbitration</li>
-                <li>Insurance arbitration</li>
-                <li>Construction arbitration</li>
-                <li>Employment arbitration</li>
-                <li>Professional services arbitration</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Workplace &amp; Employment Matters</h3>
-              <ul>
-                <li>Wrongful dismissal and accommodations</li>
-                <li>Harassment or bullying claims</li>
-                <li>Human rights complaints</li>
-                <li>Employment contract disputes</li>
-                <li>Return-to-work plans &amp; severance</li>
-              </ul>
-            </article>
+          <div class="services-carousel">
+            <div class="services-scroll">
+              <article class="service-card">
+                <h3>Personal Injury &amp; Insurance Disputes</h3>
+                <ul>
+                  <li>Motor vehicle accident claims</li>
+                  <li>Catastrophic injury cases</li>
+                  <li>Brain and spinal cord injury disputes</li>
+                  <li>Long-term disability claims</li>
+                  <li>Insurance coverage disputes</li>
+                  <li>Negotiations between injured parties and insurers</li>
+                  <li>Pre- and post-trial resolution discussions</li>
+                </ul>
+              </article>
+              <article class="service-card">
+                <h3>Civil &amp; Commercial Disputes</h3>
+                <ul>
+                  <li>Contract disagreements</li>
+                  <li>Business partnership conflicts</li>
+                  <li>Shareholder or ownership disputes</li>
+                  <li>Professional negligence claims</li>
+                  <li>Construction / contractor disputes</li>
+                  <li>Commercial lease issues</li>
+                  <li>Debt or payment disputes</li>
+                </ul>
+              </article>
+              <article class="service-card">
+                <h3>Family &amp; Relationship Matters</h3>
+                <ul>
+                  <li>Divorce and separation</li>
+                  <li>Parenting plans &amp; custody arrangements</li>
+                  <li>Support obligations</li>
+                  <li>Division of property and debts</li>
+                  <li>Co-parenting &amp; post-separation disputes</li>
+                  <li>Elder care and caregiving conflicts</li>
+                  <li>Inheritance or family estate matters</li>
+                </ul>
+              </article>
+              <article class="service-card">
+                <h3>Medical &amp; Healthcare Disputes</h3>
+                <ul>
+                  <li>Medical malpractice concerns</li>
+                  <li>Informed consent issues</li>
+                  <li>Hospital or provider disputes</li>
+                  <li>Disability or capacity disagreements</li>
+                  <li>Healthcare insurance disputes</li>
+                </ul>
+              </article>
+              <article class="service-card">
+                <h3>Arbitration-Specific Matters</h3>
+                <ul>
+                  <li>Commercial and contractual arbitration</li>
+                  <li>Insurance arbitration</li>
+                  <li>Construction arbitration</li>
+                  <li>Employment arbitration</li>
+                  <li>Professional services arbitration</li>
+                </ul>
+              </article>
+              <article class="service-card">
+                <h3>Workplace &amp; Employment Matters</h3>
+                <ul>
+                  <li>Wrongful dismissal and accommodations</li>
+                  <li>Harassment or bullying claims</li>
+                  <li>Human rights complaints</li>
+                  <li>Employment contract disputes</li>
+                  <li>Return-to-work plans &amp; severance</li>
+                </ul>
+              </article>
+            </div>
+            <button class="services-arrow" type="button" aria-label="View more services">
+              <span aria-hidden="true">&rsaquo;</span>
+            </button>
           </div>
         </div>
       </section>
@@ -257,27 +262,22 @@
             </ul>
           </div>
           <form class="contact-form">
-            <label>
-              Full name
-              <input type="text" name="name" placeholder="Alex Morgan" required />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="you@email.com" required />
-            </label>
-            <label>
-              Organization
-              <input type="text" name="org" placeholder="Company or family name" />
-            </label>
-            <label>
-              What support do you need?
-              <textarea
-                name="message"
-                rows="4"
-                placeholder="Share a few lines about your situation"
-                required
-              ></textarea>
-            </label>
+            <div class="form-field">
+              <label for="contact-name">Full name</label>
+              <input id="contact-name" type="text" name="name" required />
+            </div>
+            <div class="form-field">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" type="email" name="email" required />
+            </div>
+            <div class="form-field">
+              <label for="contact-org">Organization</label>
+              <input id="contact-org" type="text" name="org" />
+            </div>
+            <div class="form-field">
+              <label for="contact-message">What support do you need?</label>
+              <textarea id="contact-message" name="message" rows="4" required></textarea>
+            </div>
             <button class="btn btn-dark" type="submit">Send Inquiry</button>
           </form>
         </div>
